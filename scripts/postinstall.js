@@ -34,7 +34,7 @@ try {
     align: 'left',
   });
 
-  process.stdout.write(`${banner}\n`);
+  process.stderr.write(`${banner}\n`);
 } catch {
   // Silent fail-safe: installation must never fail due to banner rendering
   process.exit(0);
