@@ -27,6 +27,13 @@
     "url": "https://moustafagebreel.online"
   },
   "homepage": "https://moustafagebreel.online",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moustafagebreel/commitscore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moustafagebreel/commitscore/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=18"
