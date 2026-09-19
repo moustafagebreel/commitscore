@@ -1,6 +1,6 @@
 {
   "name": "commitscore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🔍 Analyze and improve your commit quality",
   "bin": {
     "commitscore": "bin/commit-lens.js",
@@ -8,6 +8,7 @@
   },
   "main": "src/index.js",
   "scripts": {
+    "postinstall": "node scripts/postinstall.js",
     "build": "ncc build bin/commit-lens.js -o dist --license licenses.txt",
     "test": "jest",
     "test:coverage": "jest --coverage",
