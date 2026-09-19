@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+.commit-lensrc.json
+.commit-lensrc.yaml
+.commit-lensrc.yml
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

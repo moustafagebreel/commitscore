@@ -1,0 +1,86 @@
+{
+  "rules": {
+    "length": {
+      "enabled": true,
+      "min": 10,
+      "max": 72,
+      "weight": 15
+    },
+    "conventional": {
+      "enabled": true,
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert"
+      ],
+      "requireScope": false,
+      "weight": 25
+    },
+    "spam": {
+      "enabled": true,
+      "words": [
+        "wip",
+        "fix",
+        "update",
+        "changes",
+        "stuff",
+        "asdf",
+        "test",
+        "temp",
+        "tmp",
+        "minor",
+        "major",
+        "some",
+        "random",
+        "whatever",
+        "work",
+        "progress",
+        "continued",
+        "more",
+        "again",
+        "misc"
+      ],
+      "weight": 20
+    },
+    "language": {
+      "enabled": true,
+      "preferred": [
+        "en",
+        "ar"
+      ],
+      "weight": 15
+    },
+    "scope": {
+      "enabled": true,
+      "weight": 10
+    },
+    "imperative": {
+      "enabled": true,
+      "weight": 10
+    },
+    "capitalization": {
+      "enabled": true,
+      "weight": 5
+    }
+  },
+  "scoring": {
+    "passThreshold": 70,
+    "failCI": 60
+  },
+  "ignore": {
+    "commits": [
+      "^Merge\\b",
+      "^Revert\\b",
+      "^Initial\\b"
+    ],
+    "authors": []
+  }
+}

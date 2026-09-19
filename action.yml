@@ -1,0 +1,30 @@
+name: 'commit-lens'
+description: 'Check commit quality in PRs and repositories'
+author: 'Moustafa Gebreel'
+inputs:
+  min-score:
+    description: 'Minimum required commit score (0-100)'
+    required: false
+    default: '70'
+  fail-on:
+    description: 'Threshold score below which action fails'
+    required: false
+    default: '60'
+  comment-on-pr:
+    description: 'Whether to post a review comment on pull requests'
+    required: false
+    default: 'true'
+  github-token:
+    description: 'GitHub token for PR comments'
+    required: true
+outputs:
+  score:
+    description: 'Overall commit quality score calculated by commit-lens'
+  passed:
+    description: 'Whether the commits satisfied the quality threshold'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+branding:
+  icon: 'check-circle'
+  color: 'yellow'
